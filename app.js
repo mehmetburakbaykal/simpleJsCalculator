@@ -23,8 +23,23 @@ for (button of btns) {
       buttonText = "*";
       screenValue += buttonText;
       screen.value = screenValue;
-    } else if (buttonText == "C") {
+    }
+    if (buttonText == ")") {
+      buttonText = ")";
+      screenValue += buttonText;
+      screen.value = screenValue;
+    }
+    if (buttonText == "(") {
+      buttonText = "(";
+      screenValue += buttonText;
+      screen.value = screenValue;
+    }
+    if (buttonText == "C") {
       screenValue = "";
+      screen.value = screenValue;
+    } else if (buttonText == "0") {
+      buttonText = "0";
+      screenValue += "0";
       screen.value = screenValue;
     } else if (buttonText == "1") {
       buttonText = "1";
